@@ -1,0 +1,208 @@
+{
+  "recentFiles": [
+    {
+      "basename": "C++ 工具 - readelf",
+      "path": "C++/5. C++ 工具/C++ 工具 - readelf.md"
+    },
+    {
+      "basename": "docker - 1. 基础",
+      "path": "工具/Docker/docker - 1. 基础.md"
+    },
+    {
+      "basename": "docker - 2. DockerFile",
+      "path": "工具/Docker/docker - 2. DockerFile.md"
+    },
+    {
+      "basename": "3. curl",
+      "path": "C++/10. 三方库/3. curl.md"
+    },
+    {
+      "basename": "android 基础 - 跨进程通信",
+      "path": "Android/android 基础知识/android 基础 - 跨进程通信.md"
+    },
+    {
+      "basename": "git - 3. 进阶用法 - git clone",
+      "path": "工具/git/git - 3. 进阶用法 - git clone.md"
+    },
+    {
+      "basename": "git - 3. 进阶用法",
+      "path": "工具/git/git - 3. 进阶用法.md"
+    },
+    {
+      "basename": "AI 资源",
+      "path": "AI/AI 资源.md"
+    },
+    {
+      "basename": "android 检测 - 工具 - adb（2）：top",
+      "path": "Android/android 性能/android 检测 - 工具 - adb（2）：top.md"
+    },
+    {
+      "basename": "android 检测 - 工具 - adb（3）：dumpsys",
+      "path": "Android/android 性能/android 检测 - 工具 - adb（3）：dumpsys.md"
+    },
+    {
+      "basename": "android 检测 - 工具 - adb（1）：adb协议",
+      "path": "Android/android 性能/android 检测 - 工具 - adb（1）：adb协议.md"
+    },
+    {
+      "basename": "protobuf 2. protoc 命令",
+      "path": "工具/protobuf/protobuf 2. protoc 命令.md"
+    },
+    {
+      "basename": "C 标准库 - stdlib.h",
+      "path": "C++/9. C标准库/C 标准库 - stdlib.h.md"
+    },
+    {
+      "basename": "C 标准库 - unistd.h",
+      "path": "C++/9. C标准库/C 标准库 - unistd.h.md"
+    },
+    {
+      "basename": "C 标准库 - stdio.h",
+      "path": "C++/9. C标准库/C 标准库 - stdio.h.md"
+    },
+    {
+      "basename": "Linux命令 - 基础命令（1）",
+      "path": "工具/linux/Linux命令 - 基础命令（1）.md"
+    },
+    {
+      "basename": "Linux 命令 - read",
+      "path": "工具/linux/Linux 命令 - read.md"
+    },
+    {
+      "basename": "Linux 命令 - 网络命令",
+      "path": "工具/linux/Linux 命令 - 网络命令.md"
+    },
+    {
+      "basename": "Linux 命令 - 高级命令",
+      "path": "工具/linux/Linux 命令 - 高级命令.md"
+    },
+    {
+      "basename": "Linux 基础 - 根目录结构",
+      "path": "工具/linux/Linux 基础 - 根目录结构.md"
+    },
+    {
+      "basename": "lsof",
+      "path": "工具/linux/lsof.md"
+    },
+    {
+      "basename": "android 检测 - 专项：CPU",
+      "path": "Android/android 性能/android 检测 - 专项：CPU.md"
+    },
+    {
+      "basename": "android 检测 - 工具：Perfetto",
+      "path": "Android/android 性能/android 检测 - 工具：Perfetto.md"
+    },
+    {
+      "basename": "android 检测 - 工具：代码",
+      "path": "Android/android 性能/android 检测 - 工具：代码.md"
+    },
+    {
+      "basename": "protobuf 3. 结构",
+      "path": "工具/protobuf/protobuf 3. 结构.md"
+    },
+    {
+      "basename": "protobuf 1. 介绍",
+      "path": "工具/protobuf/protobuf 1. 介绍.md"
+    },
+    {
+      "basename": "protobuf 4. Android 项目使用",
+      "path": "工具/protobuf/protobuf 4. Android 项目使用.md"
+    },
+    {
+      "basename": "JNI基础 - 5. 日志打印",
+      "path": "Android/android NDK/JNI基础 - 5. 日志打印.md"
+    },
+    {
+      "basename": "android 检测 - 工具：simpleperf",
+      "path": "Android/android 性能/android 检测 - 工具：simpleperf.md"
+    },
+    {
+      "basename": "C 标准库 - signal.h",
+      "path": "C++/9. C标准库/C 标准库 - signal.h.md"
+    },
+    {
+      "basename": "POSIX - 2.3. fcntl.h",
+      "path": "C++/9. C标准库/POSIX - 2.3. fcntl.h.md"
+    },
+    {
+      "basename": "CMake - 5. 项目编译",
+      "path": "C++/7. CMake/CMake - 5. 项目编译.md"
+    },
+    {
+      "basename": "protobuf 踩坑",
+      "path": "工具/protobuf/protobuf 踩坑.md"
+    },
+    {
+      "basename": "C++ 工具 - gdb",
+      "path": "C++/5. C++ 工具/C++ 工具 - gdb.md"
+    },
+    {
+      "basename": "C++基础 - 3.1 指针、引用",
+      "path": "C++/0. C++ 基础/C++基础 - 3.1 指针、引用.md"
+    },
+    {
+      "basename": "C++ 工具 - strip",
+      "path": "C++/5. C++ 工具/C++ 工具 - strip.md"
+    },
+    {
+      "basename": "C++ 工具 - nm",
+      "path": "C++/5. C++ 工具/C++ 工具 - nm.md"
+    },
+    {
+      "basename": "git - soft、mixed、hard",
+      "path": "工具/git/git - soft、mixed、hard.md"
+    },
+    {
+      "basename": "tcpdump",
+      "path": "工具/linux/tcpdump.md"
+    },
+    {
+      "basename": "Http - 七层模型",
+      "path": "Java/4. Java 网络/Http - 七层模型.md"
+    },
+    {
+      "basename": "Http - 常用字段 - Cache",
+      "path": "Java/4. Java 网络/Http - 常用字段 - Cache.md"
+    },
+    {
+      "basename": "Http - 版本更新",
+      "path": "Java/4. Java 网络/Http - 版本更新.md"
+    },
+    {
+      "basename": "Http - Https（2）：抓包",
+      "path": "Java/4. Java 网络/Http - Https（2）：抓包.md"
+    },
+    {
+      "basename": "Http - Https（1）：简介",
+      "path": "Java/4. Java 网络/Http - Https（1）：简介.md"
+    },
+    {
+      "basename": "C++ 工具 - Wireshark（待）",
+      "path": "C++/5. C++ 工具/C++ 工具 - Wireshark（待）.md"
+    },
+    {
+      "basename": "C++基础 - 4.1 预处理",
+      "path": "C++/0. C++ 基础/C++基础 - 4.1 预处理.md"
+    },
+    {
+      "basename": "C++基础 - 1. 数据类型",
+      "path": "C++/0. C++ 基础/C++基础 - 1. 数据类型.md"
+    },
+    {
+      "basename": "C++进阶 - 全局符号表",
+      "path": "C++/1. C++ 进阶/C++进阶 - 全局符号表.md"
+    },
+    {
+      "basename": "git - 2. 基础用法",
+      "path": "工具/git/git - 2. 基础用法.md"
+    },
+    {
+      "basename": "git - 1. 准备",
+      "path": "工具/git/git - 1. 准备.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
