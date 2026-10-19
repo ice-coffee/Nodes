@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "C++/10. POSIX/POSIX - 概述.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "POSIX - 概述"
+            }
+          },
+          {
+            "id": "7cc2558916131960",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "C++/5. C++ 工具/C++ 工具 - readelf.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "C++ 工具 - readelf"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.8359375
+    "width": 247.6875
   },
   "right": {
     "id": "376561e0ad797cac",
@@ -182,7 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,36 +215,39 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "7cc2558916131960",
   "lastOpenFiles": [
-    "README.md",
-    "工具/Docker/docker - 1. 基础.md",
-    "工具/Docker/docker - 2. DockerFile.md",
-    "C++/10. 三方库/3. curl.md",
-    "Android/android 基础知识/android 基础 - 跨进程通信.md",
-    "工具/git/git - 3. 进阶用法 - git clone.md",
-    "工具/git/git - 3. 进阶用法.md",
+    "C++/8. C++ 标准库/C++、C 标准库与 POSIX - 能力对比.md",
+    "C++/8. C++ 标准库/C++ 标准库 - 概述.md",
+    "C++/8. C++ 标准库/C++ 标准库 - xxxstream.md",
+    "C++/10. POSIX/POSIX - 概述.md",
+    "C++/9. C 标准库/C 标准库 - 概述.md",
+    "C++/8. 库",
+    "C++/10. POSIX/POSIX - dlfcn.h.md",
+    "C++/10. POSIX/POSIX - sys_stat.h.md",
+    "C++/10. POSIX/POSIX - sys_types.h.md",
+    "C++/10. POSIX/POSIX - fcntl.h.md",
+    "C++/10. POSIX/POSIX - time.h.md",
+    "C++/10. POSIX/POSIX - dirent.h.md",
+    "C++/10. POSIX/POSIX - unistd.h.md",
+    "C++/10. POSIX/POSIX - 目录.md",
+    "C++/10. POSIX",
+    "C++/9. C标准库/POSIX/POSIX - dlfcn.h.md",
+    "C++/9. C标准库/POSIX/POSIX - sys_stat.h.md",
+    "C++/9. C标准库/POSIX/POSIX - sys_types.h.md",
+    "C++/9. C标准库/POSIX - 2.1. unistd.h.md",
+    "C++/9. C标准库/POSIX/POSIX - fcntl.h.md",
+    "C++/9. C标准库/POSIX/POSIX - time.h.md",
+    "C++/9. C标准库/POSIX/POSIX - dirent.h.md",
+    "C++/9. C标准库/POSIX/POSIX - unistd.h.md",
+    "C++/9. C标准库/POSIX/POSIX - 概述.md",
+    "C++/9. C标准库/POSIX/POSIX - 目录.md",
+    "C++/9. C标准库/POSIX",
+    "C++/9. C标准库/POSIX - 1. 简介.md",
+    "C++/9. C 标准库/C 标准库 - stdio.h.md",
+    "C++/9. C 标准库/C 标准库 - signal.h.md",
     "未命名.base",
     "未命名 1.base",
-    "AI/AI 资源.md",
-    "AI/AI 实践.md",
-    "Android/android 性能/android 检测 - 工具 - adb（2）：top.md",
-    "Android/android 性能/android 检测 - 工具 - adb（3）：dumpsys.md",
-    "Android/android 性能/android 检测 - 工具 - adb（1）：adb协议.md",
-    "工具/protobuf/protobuf 2. protoc 命令.md",
-    "C++/9. C标准库/C 标准库 - stdlib.h.md",
-    "C++/9. C标准库/C 标准库 - unistd.h.md",
-    "C++/9. C标准库/C 标准库 - stdio.h.md",
-    "工具/linux/Linux命令 - 基础命令（1）.md",
-    "工具/linux/Linux 命令 - read.md",
-    "工具/linux/Linux 命令 - 网络命令.md",
-    "工具/linux/Linux 命令 - 高级命令.md",
-    "工具/linux/Linux 基础 - 根目录结构.md",
-    "工具/linux/lsof.md",
-    "Android/android 性能/android 检测 - 专项：CPU.md",
-    "Android/android 性能/android 检测 - 工具：Perfetto.md",
-    "Android/android 性能/android 检测 - 工具：代码.md",
-    "工具/protobuf/protobuf 3. 结构.md",
     "C++/3. C++ 数据结构/map",
     "C++/2. C++ 多线程/mutex"
   ]

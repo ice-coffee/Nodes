@@ -5,6 +5,38 @@
       "path": "C++/5. C++ 工具/C++ 工具 - readelf.md"
     },
     {
+      "basename": "C++、C 标准库与 POSIX - 能力对比",
+      "path": "C++/8. C++ 标准库/C++、C 标准库与 POSIX - 能力对比.md"
+    },
+    {
+      "basename": "C++ 标准库 - 概述",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - 概述.md"
+    },
+    {
+      "basename": "C++ 标准库 - xxxstream",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - xxxstream.md"
+    },
+    {
+      "basename": "POSIX - 概述",
+      "path": "C++/10. POSIX/POSIX - 概述.md"
+    },
+    {
+      "basename": "C 标准库 - 概述",
+      "path": "C++/9. C 标准库/C 标准库 - 概述.md"
+    },
+    {
+      "basename": "C 标准库 - stdio.h",
+      "path": "C++/9. C 标准库/C 标准库 - stdio.h.md"
+    },
+    {
+      "basename": "C 标准库 - signal.h",
+      "path": "C++/9. C 标准库/C 标准库 - signal.h.md"
+    },
+    {
+      "basename": "C++ 工具 - objdump",
+      "path": "C++/5. C++ 工具/C++ 工具 - objdump.md"
+    },
+    {
       "basename": "docker - 1. 基础",
       "path": "工具/Docker/docker - 1. 基础.md"
     },
@@ -14,7 +46,7 @@
     },
     {
       "basename": "3. curl",
-      "path": "C++/10. 三方库/3. curl.md"
+      "path": "C++/11. 三方库/3. curl.md"
     },
     {
       "basename": "android 基础 - 跨进程通信",
@@ -50,15 +82,7 @@
     },
     {
       "basename": "C 标准库 - stdlib.h",
-      "path": "C++/9. C标准库/C 标准库 - stdlib.h.md"
-    },
-    {
-      "basename": "C 标准库 - unistd.h",
-      "path": "C++/9. C标准库/C 标准库 - unistd.h.md"
-    },
-    {
-      "basename": "C 标准库 - stdio.h",
-      "path": "C++/9. C标准库/C 标准库 - stdio.h.md"
+      "path": "C++/9. C 标准库/C 标准库 - stdlib.h.md"
     },
     {
       "basename": "Linux命令 - 基础命令（1）",
@@ -115,14 +139,6 @@
     {
       "basename": "android 检测 - 工具：simpleperf",
       "path": "Android/android 性能/android 检测 - 工具：simpleperf.md"
-    },
-    {
-      "basename": "C 标准库 - signal.h",
-      "path": "C++/9. C标准库/C 标准库 - signal.h.md"
-    },
-    {
-      "basename": "POSIX - 2.3. fcntl.h",
-      "path": "C++/9. C标准库/POSIX - 2.3. fcntl.h.md"
     },
     {
       "basename": "CMake - 5. 项目编译",
@@ -183,22 +199,6 @@
     {
       "basename": "C++基础 - 4.1 预处理",
       "path": "C++/0. C++ 基础/C++基础 - 4.1 预处理.md"
-    },
-    {
-      "basename": "C++基础 - 1. 数据类型",
-      "path": "C++/0. C++ 基础/C++基础 - 1. 数据类型.md"
-    },
-    {
-      "basename": "C++进阶 - 全局符号表",
-      "path": "C++/1. C++ 进阶/C++进阶 - 全局符号表.md"
-    },
-    {
-      "basename": "git - 2. 基础用法",
-      "path": "工具/git/git - 2. 基础用法.md"
-    },
-    {
-      "basename": "git - 1. 准备",
-      "path": "工具/git/git - 1. 准备.md"
     }
   ],
   "omittedPaths": [],
