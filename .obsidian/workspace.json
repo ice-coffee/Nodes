@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++/10. POSIX/POSIX - 概述.md",
-                "mode": "source",
-                "source": false
+                "file": "工具/git/git - 3. 进阶用法 - git clone.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "POSIX - 概述"
-            }
-          },
-          {
-            "id": "7cc2558916131960",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "C++/5. C++ 工具/C++ 工具 - readelf.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "C++ 工具 - readelf"
+              "title": "git - 3. 进阶用法 - git clone"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -70,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "extern \"C\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.6875
+    "width": 274.8828125
   },
   "right": {
     "id": "376561e0ad797cac",
@@ -183,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C++/5. C++ 工具/C++ 工具 - readelf.md",
+                "file": "工具/git/git - 3. 进阶用法 - git clone.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -197,7 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 263.84765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,37 +200,37 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7cc2558916131960",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "C++/8. C++ 标准库/C++、C 标准库与 POSIX - 能力对比.md",
+    "工具/git/git - 1. 准备.md",
+    "工具/linux/Ubuntu-24.04-安装教程.md",
+    "工具/git/git - 3. 进阶用法 - git clone.md",
+    "工具/git/git - 3. 进阶用法.md",
+    "C++/8. C++ 标准库/C++ 标准库 - functional.md",
+    "C++/8. C++ 标准库/C++ 标准库 - filesystem.md",
+    "C++/8. C++ 标准库/C++ 标准库 - ctime.md",
+    "C++/8. C++ 标准库/C++ 标准库 - cstdlib.md",
     "C++/8. C++ 标准库/C++ 标准库 - 概述.md",
-    "C++/8. C++ 标准库/C++ 标准库 - xxxstream.md",
-    "C++/10. POSIX/POSIX - 概述.md",
-    "C++/9. C 标准库/C 标准库 - 概述.md",
+    "C++/0. C++ 基础/C++基础 - 1.5 从编译到运行.md",
+    "C++/0. C++ 基础/C++基础 - 1.4 C 与 C++ 的前世今生.md",
+    "C++/0. C++ 基础/C++基础 - 0.5 从编译到运行.md",
+    "C++/0. C++ 基础/C++基础 - 1. 备忘录.md",
+    "C++/0. C++ 基础/C++基础 - 1.1 资料.md",
+    "C++/0. C++ 基础/C++基础 - 1.2 学习之旅.md",
+    "C++/0. C++ 基础/C++基础 - 1.3 历史版本.md",
+    "C++/0. C++ 基础/C++基础 - 2. 数据类型.md",
+    "C++/0. C++ 基础/C++基础 - 3.1 面向对象 - 变量.md",
+    "C++/0. C++ 基础/C++基础 - 3.2 面向对象 - 类.md",
+    "C++/0. C++ 基础/C++基础 - 3.3面向对象 - 继承.md",
+    "C++/0. C++ 基础/C++基础 - 3.4 面向对象 - 多态.md",
+    "C++/0. C++ 基础/C++基础 - 4.1 指针、引用.md",
+    "C++/0. C++ 基础/C++基础 - 4.2 指针、引用 - 智能指针.md",
+    "C++/0. C++ 基础/C++基础 - 5.1 预处理.md",
+    "C++/0. C++ 基础/C++基础 - 5.2 模板.md",
+    "C++/0. C++ 基础/C++基础 - 5.3 异常处理.md",
     "C++/8. 库",
-    "C++/10. POSIX/POSIX - dlfcn.h.md",
-    "C++/10. POSIX/POSIX - sys_stat.h.md",
-    "C++/10. POSIX/POSIX - sys_types.h.md",
-    "C++/10. POSIX/POSIX - fcntl.h.md",
-    "C++/10. POSIX/POSIX - time.h.md",
-    "C++/10. POSIX/POSIX - dirent.h.md",
-    "C++/10. POSIX/POSIX - unistd.h.md",
-    "C++/10. POSIX/POSIX - 目录.md",
     "C++/10. POSIX",
-    "C++/9. C标准库/POSIX/POSIX - dlfcn.h.md",
-    "C++/9. C标准库/POSIX/POSIX - sys_stat.h.md",
-    "C++/9. C标准库/POSIX/POSIX - sys_types.h.md",
-    "C++/9. C标准库/POSIX - 2.1. unistd.h.md",
-    "C++/9. C标准库/POSIX/POSIX - fcntl.h.md",
-    "C++/9. C标准库/POSIX/POSIX - time.h.md",
-    "C++/9. C标准库/POSIX/POSIX - dirent.h.md",
-    "C++/9. C标准库/POSIX/POSIX - unistd.h.md",
-    "C++/9. C标准库/POSIX/POSIX - 概述.md",
-    "C++/9. C标准库/POSIX/POSIX - 目录.md",
     "C++/9. C标准库/POSIX",
-    "C++/9. C标准库/POSIX - 1. 简介.md",
-    "C++/9. C 标准库/C 标准库 - stdio.h.md",
-    "C++/9. C 标准库/C 标准库 - signal.h.md",
     "未命名.base",
     "未命名 1.base",
     "C++/3. C++ 数据结构/map",

@@ -1,24 +1,93 @@
-[toc]
-
 ## 概述
 
 `c++` 中常用流头文件如下：
 
-* `iostream`(`istream`、`ostream`)：输入输出流基类。
-* `fstream`(`ifstream`、`ofstream`)：文件输入输出流。
-* `sstream`(`istringstream`、`ostringstream`)：`string` 格式字符串输入输出流。
-* `strstream`(`istrstream`、`ostrstream`)：`char` 数组格式字符串输入输出流。
+* `<iostream>`：输入输出流基类。
+* `<fstream>`：文件输入输出流。
+* `<sstream>`：`string` 格式字符串输入输出流。
+* `<strstream>`：`char` 数组格式字符串输入输出流。
 
-其中 `iostream` 相当于其他流文件的父类，`fstream` 等都是派生自 `iostream`。这些头文件中都包含一个输入流、一个输出流。
+其中 `<iostream>` 相当于其他流头文件的父类，`<fstream>` 等都是派生自它。这些头文件中都包含一个输入流、一个输出流。
 
-在 `iosfwd` 头文件中，定义了这些头文件中所包含类的别名，以方便使用。 `iosfwd` 头文件引用关系：
+## `<iosfwd>`
 
-> `istream、ostream` --> `ios` --> `iosfwd`
+即 `ios forward`，是流体系的前置声明头文件：只声明类模板和类型别名，不包含任何类定义，也不定义流对象。
 
-## iostream
-在对应输入输出流类的定义中，可以看到它们重写了 `<<` 运算符，用于输入或输出各种类型数据。
+### 声明内容
 
-`basic_ostream` 中定义的方法：
+```c++
+namespace std {
+    // 类模板前置声明（只声明，不定义）
+    template<class CharT, class Traits = char_traits<CharT>> class basic_ios;
+    template<class CharT, class Traits = char_traits<CharT>> class basic_streambuf;
+    template<class CharT, class Traits = char_traits<CharT>> class basic_istream;
+    template<class CharT, class Traits = char_traits<CharT>> class basic_ostream;
+    template<class CharT, class Traits = char_traits<CharT>> class basic_iostream;
+    // 以及 basic_ifstream / basic_ofstream / basic_fstream
+    //     basic_istringstream / basic_ostringstream / basic_stringstream
+    //     basic_filebuf / basic_stringbuf
+}
+```
+
+* 别名：`istream`、`ostream`、`iostream`、`ifstream`、`ofstream`、`fstream`、`istringstream`、`ostringstream`、`stringstream` 及对应的 `w` 版本。
+* 辅助类型：`streamsize`、`streamoff`、`streampos`、`wstreampos`、`fpos`、`char_traits` 的特化声明。
+
+> `<iosfwd>` 中既没有 `cin`、`cout`、`cerr`，也没有成员函数，因此不能构造对象、不能调用方法，只适合用于声明函数签名。
+
+### 作用
+
+* 降低编译依赖：头文件中只写 `std::ostream& operator<<(...)` 之类的签名时，无需包含整个 `<iostream>`。
+* 打破循环包含：类之间互相引用流类型时不会形成 include 环。
+* 保证模板默认参数只声明一次：`char_traits<CharT>` 不能重复指定默认实参，标准库将其统一收敛在 `<iosfwd>` 中。
+
+### 用法示例
+
+```c++
+// my_class.h
+#pragma once
+#include <iosfwd>        // 仅需要 std::ostream 的声明
+
+class MyClass {
+public:
+    void dump(std::ostream& os) const;
+};
+```
+
+```c++
+// my_class.cpp
+#include "my_class.h"
+#include <iostream>      // 真正用到成员函数时才包含完整定义
+
+void MyClass::dump(std::ostream& os) const { os << "MyClass\n"; }
+```
+
+## `<iostream>`
+标准输入输出流，包含输入流 `istream` 与输出流 `ostream`：前者负责从流中读取数据，后者负责向流中写入数据。`<iostream>` 同时包含 `<istream>` 与 `<ostream>` 的内容，并定义了 `cin`、`cout` 等标准流对象。
+
+### 预定义对象
+
+* `cin`：标准输入（键盘），类型 `istream`，带缓冲区。
+* `cout`：标准输出（屏幕），类型 `ostream`，带缓冲区，缓冲区满或刷新时才真正写出。
+* `cerr`：标准错误，类型 `ostream`，**不带缓冲**，适合输出需要立即看到的错误信息。
+* `clog`：标准错误，类型 `ostream`，带缓冲。
+
+`wcin`、`wcout`、`wcerr`、`wclog` 是对应的宽字符版本。
+
+### 输入输出运算符
+
+* `>>` 提取：从流中读取数据，默认以空白符（空格、制表、换行）为分隔。
+* `<<` 插入：向流中写入数据。
+
+两个运算符都返回流自身的引用，因此支持链式写法：
+
+```c++
+int age = 0;
+std::string name;
+std::cin >> name >> age;                   // 输入：Tom 18
+std::cout << name << " " << age << '\n';   // 输出：Tom 18
+```
+
+### `basic_ostream` 中定义的方法
 
 * `put(char_type __c)`：用于将指定的字符写入输出流
 * `write(const char_type* __s, streamsize __n)`：用于将指定数量的字符数组写入输出流
@@ -26,14 +95,60 @@
 * `pos_type tellp()`：返回当前输出位置的绝对位置。
 * `seekp(pos_type)`：设置输出位置到指定的绝对位置。
 
-`basic_istream` 中定义的方法：
+### `basic_istream` 中定义的方法
+
+* `get(char_type& c)`：读取单个字符，不跳过空白。
+* `getline(char_type* s, streamsize n)`：读取一行，最多 `n-1` 个字符并自动补 `\0`。
+* `read(char_type* s, streamsize n)`：读取固定长度的字符，数量不足时置 `failbit`。
+* `peek()`：返回下一个字符但不取走。
+* `ignore(streamsize n = 1)`：跳过 `n` 个字符，常用于丢弃缓冲区里残留的换行。
 
 [c++中istream类的超详细说明](https://www.zhihu.com/tardis/zm/art/365268763?source_id=1003)
 
-## fstream
-文件输入输出流。
+### 读取整行
 
-`fstream` 头文件包含如下3个类：
+* `std::getline(std::cin, std::string)`：读入一整行到 `std::string`，推荐写法。
+* `cin.getline(char* s, streamsize n)`：读入 C 风格字符数组，最多 `n-1` 个字符。
+
+```c++
+std::string line;
+while (std::getline(std::cin, line)) {
+    std::cout << line << '\n';
+}
+```
+
+> `cin >> x` 会跳过前导空白，并在读完数据后把分隔符留在缓冲区；紧接着调用 `getline` 会读到一个空行，必要时先 `std::cin.ignore()`。
+
+### 状态标志
+
+* `good()` / `eof()` / `fail()` / `bad()`：判断流是否可用、是否到达末尾、是否提取失败或发生严重错误。
+* `clear()`：清除状态标志，让流重新可用。
+* `rdstate()`：返回当前状态位。
+
+```c++
+int n;
+if (!(std::cin >> n)) {           // 提取失败（例如输入了字母）
+    std::cin.clear();             // 清除 failbit
+    std::cin.ignore(1024, '\n');  // 丢弃本行剩余内容
+}
+```
+
+### 位置指针
+
+* `seekg(pos)` / `seekg(offset, dir)`：设置读位置（g 取自 get）。
+* `tellg()`：返回当前读位置。
+* `seekp(pos)` / `seekp(offset, dir)`：设置写位置（p 取自 put）。
+* `tellp()`：返回当前写位置。
+* 定位基准 `dir`：`ios::beg` 流开始、`ios::cur` 当前位置、`ios::end` 流末尾。
+
+位置值是从流起始位置到当前位置的字节数。这些函数主要用于文件流和字符串流。
+
+> 格式化（宽度、精度、进制、对齐）由 `<iomanip>` 中的操纵器提供，见下文 `<iomanip>` 小节。
+
+## `<fstream>`
+文件输入输出流，把磁盘文件当作流来读写：`ifstream` 只负责读文件，`ofstream` 只负责写文件，`fstream` 可读可写。
+
+`<fstream>` 头文件包含如下3个类：
 
 * `basic_ofstream`：别名 `ofstream`，用于写文件。
 * `basic_ifstream`：别名 `ifstream`，用于读文件。
@@ -65,107 +180,13 @@ void open(const char* __s, ios_base::openmode __mode = ios_base::out);
 void close();
 ```
 
-四、读取、写入信息
-写入信息到文件 ：<<
+## `<sstream>`
+`string` 格式字符串输入输出流，把 `string` 当作流来读写：`istringstream` 从字符串中读取并解析，`ostringstream` 把数据格式化成字符串，`stringstream` 两者皆可。
 
-读取文件内容 ： >> 读取到空格停止
+## `<strstream>`
+`char` 数组格式字符串输入输出流，把 `char` 数组当作流来读写：`istrstream` 从 `char` 数组读取，`ostrstream` 向 `char` 数组写入。
 
-cin.getline() 读取一行信息
-
-cin >> data; 读取遇到空格停止
-
-实例：
-
-```c++
-/*
-文件读写流（NOI允许使用fstream头文件
-*/
-#include <iostream>
-#include <fstream>
-#include <cstring>
-
-using namespace std;
-
-int main(int argc, char **argv)
-{
-    //从标准输入cin读取一行字符串， 写入到文件
-    char data[1024] = {0};
-    cin.getline(data, sizeof(data));
-    ofstream ofile;
-    ofile.open("out.txt", ios::app);
-    if (!ofile.is_open())
-    {
-        cerr << "Error: open file!" << endl;
-        return -1;
-    }
-
-    ofile << data << endl;
-    ofile.clear();
-    ofile.close();
-
-    //1. 读取一个单词(遇到空格停止), <<
-    ifstream ifile;
-    ifile.open("out.txt");
-    if (!ifile.is_open())
-    {
-        cerr << "Error: open file!" << endl;
-        return -1;
-    }
-    memset(data, 0, sizeof(data));
-    ifile >> data;
-    cout << "data:" << data << endl;
-    ifile.close();
-
-    //2. 循环读取文件每一行 getline
-    ifile.open("out.txt");
-    if (!ifile.is_open())
-    {
-        cerr << "Error: open file!" << endl;
-        return -1;
-    }
-    while (ifile.getline(data, sizeof(data)))
-    {
-        cout  << "read line:" << data << endl;
-		memset(data, 0, sizeof(data));
-    }
-    ifile.close();
-
-    return 0;
-}
-```
-五、文件位置指针
-`istream` 和 `ostream` 都提供了用于重新定位文件位置指针的成员函数。
-
-* `istream`：`seekg("seek get")` 读文件流
-* `ostream`：`seekp("seek put")` 写文件流
-
-seekg 和 seekp 的参数通常是一个长整型。第二个参数可以用于指定查找方向。
-
-* `ios::beg` 流开始位置
-* `ios::cur` 流当前位置
-* `ios::end` 流末尾位置
-
-文件位置指针是一个整数值，指定了从文件的起始位置到指针所在位置的字节数。下面是关于定位 "get" 文件位置指针的实例：
-
-```c++
-// 定位到 fileObject 的第 n 个字节（假设是 ios::beg）
-ifile.seekg(n);
- 
-// 把文件的读指针从 fileObject 当前位置向后移 n 个字节
-ifile.seekg(n, ios::cur);
- 
-// 把文件的写指针从 fileObject 末尾往回移 n 个字节
-ofile.seekp(n, ios::end);
- 
-// 定位到 fileObject 的末尾
-ofile.seekp(0, ios::end);
-```
-
-## sstream
-`string` 格式字符串输入输出流。
-
-## strstream
-`char` 数组格式字符串输入输出流。
+> 这些类已废弃，新代码应改用 `<sstream>`。
 
 ```c++
 #include <iostream> 
@@ -192,7 +213,7 @@ int main()
 }
 ```
 
-## iomanip
+## `<iomanip>`
 控制输入输出流中的数据格式。
 
 ### 常见应用

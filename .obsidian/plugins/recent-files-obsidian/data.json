@@ -1,20 +1,92 @@
 {
   "recentFiles": [
     {
-      "basename": "C++ 工具 - readelf",
-      "path": "C++/5. C++ 工具/C++ 工具 - readelf.md"
+      "basename": "git - 3. 进阶用法 - git clone",
+      "path": "工具/git/git - 3. 进阶用法 - git clone.md"
     },
     {
-      "basename": "C++、C 标准库与 POSIX - 能力对比",
-      "path": "C++/8. C++ 标准库/C++、C 标准库与 POSIX - 能力对比.md"
+      "basename": "git - 1. 准备",
+      "path": "工具/git/git - 1. 准备.md"
+    },
+    {
+      "basename": "Ubuntu-24.04-安装教程",
+      "path": "工具/linux/Ubuntu-24.04-安装教程.md"
+    },
+    {
+      "basename": "git - 3. 进阶用法",
+      "path": "工具/git/git - 3. 进阶用法.md"
+    },
+    {
+      "basename": "C++ 标准库 - functional",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - functional.md"
+    },
+    {
+      "basename": "C++ 标准库 - filesystem",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - filesystem.md"
+    },
+    {
+      "basename": "C++ 标准库 - ctime",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - ctime.md"
+    },
+    {
+      "basename": "C++ 标准库 - cstdlib",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - cstdlib.md"
     },
     {
       "basename": "C++ 标准库 - 概述",
       "path": "C++/8. C++ 标准库/C++ 标准库 - 概述.md"
     },
     {
+      "basename": "C++基础 - 1.5 从编译到运行",
+      "path": "C++/0. C++ 基础/C++基础 - 1.5 从编译到运行.md"
+    },
+    {
+      "basename": "C++基础 - 1.4 C 与 C++ 的前世今生",
+      "path": "C++/0. C++ 基础/C++基础 - 1.4 C 与 C++ 的前世今生.md"
+    },
+    {
+      "basename": "CMake - 4. 无",
+      "path": "C++/7. CMake/CMake - 4. 无.md"
+    },
+    {
+      "basename": "GNU 介绍",
+      "path": "C++/7. CMake/GNU 介绍.md"
+    },
+    {
+      "basename": "CMake - 2. 语法",
+      "path": "C++/7. CMake/CMake - 2. 语法.md"
+    },
+    {
+      "basename": "CMake - 1. 概述",
+      "path": "C++/7. CMake/CMake - 1. 概述.md"
+    },
+    {
+      "basename": "CMake - 5. 项目编译",
+      "path": "C++/7. CMake/CMake - 5. 项目编译.md"
+    },
+    {
+      "basename": "C++ 工具 - gdb",
+      "path": "C++/5. C++ 工具/C++ 工具 - gdb.md"
+    },
+    {
+      "basename": "git - soft、mixed、hard",
+      "path": "工具/git/git - soft、mixed、hard.md"
+    },
+    {
+      "basename": "android 基础 - 跨进程通信",
+      "path": "Android/android 基础知识/android 基础 - 跨进程通信.md"
+    },
+    {
       "basename": "C++ 标准库 - xxxstream",
       "path": "C++/8. C++ 标准库/C++ 标准库 - xxxstream.md"
+    },
+    {
+      "basename": "C++、C 标准库与 POSIX - 能力对比",
+      "path": "C++/8. C++ 标准库/C++、C 标准库与 POSIX - 能力对比.md"
+    },
+    {
+      "basename": "C++ 标准库 - string",
+      "path": "C++/8. C++ 标准库/C++ 标准库 - string.md"
     },
     {
       "basename": "POSIX - 概述",
@@ -23,6 +95,42 @@
     {
       "basename": "C 标准库 - 概述",
       "path": "C++/9. C 标准库/C 标准库 - 概述.md"
+    },
+    {
+      "basename": "android 检测 - 工具：simpleperf",
+      "path": "Android/android 性能/android 检测 - 工具：simpleperf.md"
+    },
+    {
+      "basename": "android 检测 - 工具 - adb（3）：dumpsys",
+      "path": "Android/android 性能/android 检测 - 工具 - adb（3）：dumpsys.md"
+    },
+    {
+      "basename": "CMake - 6.5 编译选项",
+      "path": "C++/7. CMake/CMake - 6.5 编译选项.md"
+    },
+    {
+      "basename": "CMake - 6.4 CMake_ 变量",
+      "path": "C++/7. CMake/CMake - 6.4 CMake_ 变量.md"
+    },
+    {
+      "basename": "CMake - 6.3 属性",
+      "path": "C++/7. CMake/CMake - 6.3 属性.md"
+    },
+    {
+      "basename": "CMake - 6.2 CMake 构建规范和使用要求",
+      "path": "C++/7. CMake/CMake - 6.2 CMake 构建规范和使用要求.md"
+    },
+    {
+      "basename": "CMake - 6.1 CMake 构建系统组成",
+      "path": "C++/7. CMake/CMake - 6.1 CMake 构建系统组成.md"
+    },
+    {
+      "basename": "Shell - 2.2 特殊符号大全",
+      "path": "Shell/Shell 基础/Shell - 2.2 特殊符号大全.md"
+    },
+    {
+      "basename": "C++ 工具 - readelf",
+      "path": "C++/5. C++ 工具/C++ 工具 - readelf.md"
     },
     {
       "basename": "C 标准库 - stdio.h",
@@ -49,28 +157,12 @@
       "path": "C++/11. 三方库/3. curl.md"
     },
     {
-      "basename": "android 基础 - 跨进程通信",
-      "path": "Android/android 基础知识/android 基础 - 跨进程通信.md"
-    },
-    {
-      "basename": "git - 3. 进阶用法 - git clone",
-      "path": "工具/git/git - 3. 进阶用法 - git clone.md"
-    },
-    {
-      "basename": "git - 3. 进阶用法",
-      "path": "工具/git/git - 3. 进阶用法.md"
-    },
-    {
       "basename": "AI 资源",
       "path": "AI/AI 资源.md"
     },
     {
       "basename": "android 检测 - 工具 - adb（2）：top",
       "path": "Android/android 性能/android 检测 - 工具 - adb（2）：top.md"
-    },
-    {
-      "basename": "android 检测 - 工具 - adb（3）：dumpsys",
-      "path": "Android/android 性能/android 检测 - 工具 - adb（3）：dumpsys.md"
     },
     {
       "basename": "android 检测 - 工具 - adb（1）：adb协议",
@@ -83,122 +175,6 @@
     {
       "basename": "C 标准库 - stdlib.h",
       "path": "C++/9. C 标准库/C 标准库 - stdlib.h.md"
-    },
-    {
-      "basename": "Linux命令 - 基础命令（1）",
-      "path": "工具/linux/Linux命令 - 基础命令（1）.md"
-    },
-    {
-      "basename": "Linux 命令 - read",
-      "path": "工具/linux/Linux 命令 - read.md"
-    },
-    {
-      "basename": "Linux 命令 - 网络命令",
-      "path": "工具/linux/Linux 命令 - 网络命令.md"
-    },
-    {
-      "basename": "Linux 命令 - 高级命令",
-      "path": "工具/linux/Linux 命令 - 高级命令.md"
-    },
-    {
-      "basename": "Linux 基础 - 根目录结构",
-      "path": "工具/linux/Linux 基础 - 根目录结构.md"
-    },
-    {
-      "basename": "lsof",
-      "path": "工具/linux/lsof.md"
-    },
-    {
-      "basename": "android 检测 - 专项：CPU",
-      "path": "Android/android 性能/android 检测 - 专项：CPU.md"
-    },
-    {
-      "basename": "android 检测 - 工具：Perfetto",
-      "path": "Android/android 性能/android 检测 - 工具：Perfetto.md"
-    },
-    {
-      "basename": "android 检测 - 工具：代码",
-      "path": "Android/android 性能/android 检测 - 工具：代码.md"
-    },
-    {
-      "basename": "protobuf 3. 结构",
-      "path": "工具/protobuf/protobuf 3. 结构.md"
-    },
-    {
-      "basename": "protobuf 1. 介绍",
-      "path": "工具/protobuf/protobuf 1. 介绍.md"
-    },
-    {
-      "basename": "protobuf 4. Android 项目使用",
-      "path": "工具/protobuf/protobuf 4. Android 项目使用.md"
-    },
-    {
-      "basename": "JNI基础 - 5. 日志打印",
-      "path": "Android/android NDK/JNI基础 - 5. 日志打印.md"
-    },
-    {
-      "basename": "android 检测 - 工具：simpleperf",
-      "path": "Android/android 性能/android 检测 - 工具：simpleperf.md"
-    },
-    {
-      "basename": "CMake - 5. 项目编译",
-      "path": "C++/7. CMake/CMake - 5. 项目编译.md"
-    },
-    {
-      "basename": "protobuf 踩坑",
-      "path": "工具/protobuf/protobuf 踩坑.md"
-    },
-    {
-      "basename": "C++ 工具 - gdb",
-      "path": "C++/5. C++ 工具/C++ 工具 - gdb.md"
-    },
-    {
-      "basename": "C++基础 - 3.1 指针、引用",
-      "path": "C++/0. C++ 基础/C++基础 - 3.1 指针、引用.md"
-    },
-    {
-      "basename": "C++ 工具 - strip",
-      "path": "C++/5. C++ 工具/C++ 工具 - strip.md"
-    },
-    {
-      "basename": "C++ 工具 - nm",
-      "path": "C++/5. C++ 工具/C++ 工具 - nm.md"
-    },
-    {
-      "basename": "git - soft、mixed、hard",
-      "path": "工具/git/git - soft、mixed、hard.md"
-    },
-    {
-      "basename": "tcpdump",
-      "path": "工具/linux/tcpdump.md"
-    },
-    {
-      "basename": "Http - 七层模型",
-      "path": "Java/4. Java 网络/Http - 七层模型.md"
-    },
-    {
-      "basename": "Http - 常用字段 - Cache",
-      "path": "Java/4. Java 网络/Http - 常用字段 - Cache.md"
-    },
-    {
-      "basename": "Http - 版本更新",
-      "path": "Java/4. Java 网络/Http - 版本更新.md"
-    },
-    {
-      "basename": "Http - Https（2）：抓包",
-      "path": "Java/4. Java 网络/Http - Https（2）：抓包.md"
-    },
-    {
-      "basename": "Http - Https（1）：简介",
-      "path": "Java/4. Java 网络/Http - Https（1）：简介.md"
-    },
-    {
-      "basename": "C++ 工具 - Wireshark（待）",
-      "path": "C++/5. C++ 工具/C++ 工具 - Wireshark（待）.md"
-    },
-    {
-      "basename": "C++基础 - 4.1 预处理",
-      "path": "C++/0. C++ 基础/C++基础 - 4.1 预处理.md"
     }
   ],
   "omittedPaths": [],
